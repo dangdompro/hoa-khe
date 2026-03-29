@@ -1,76 +1,224 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="vi">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Các dự án | Hoa Khê</title>
-  <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="../assets/css/style.css">
-</head>
-<body>
-
-  <header>
-    <div class="container">
-      <h1 class="logo">Hoa Khê</h1>
-      <nav>
-        <a href="../index.html">Trang chủ</a>
-        <a href="../news.html">Tin tức</a>
-        <a href="index.html">Các dự án</a>
-        <a href="../knowledge.html">Kiến thức</a>
-        <a href="../contact.html">Liên hệ</a>
-        <a href="../portal.html">Cổng nội bộ</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="projects">
-      <div class="container">
-        <h2>Các dự án</h2>
-        <p class="section-desc">
-          Một số công trình tiêu biểu do Hoa Khê thực hiện.
-        </p>
-
-        <div class="project-grid">
-
-          <!-- Project 1 -->
-          <a href="industrial.html" class="project-card">
-            <div class="project-image">
-              <img src="../assets/images/du-an-1.jpg" alt="Nhà xưởng công nghiệp">
-            </div>
-            <div class="project-content">
-              <h3>Nhà xưởng công nghiệp</h3>
-            </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dự án | Hoa Khê</title>
+    <!-- Favicon -->
+    <link rel="icon" href="/assets/favicon/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/favicon/favicon-32x32.png"
+    />
+    <link rel="apple-touch-icon" href="/assets/favicon/apple-touch-icon.png" />
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <!-- =================================
+          HEADER 
+    ================================== -->
+    <header class="site-header">
+      <div class="container header-inner">
+        <div class="logo">
+          <a href="/">
+            <img src="/assets/images/logo-hkc.png" alt="Hoa Khê" />
           </a>
+        </div>
 
-          <!-- Project 2 -->
-          <a href="high-building.html" class="project-card">
-            <div class="project-image">
-              <img src="../assets/images/du-an-2.jpg" alt="Toà nhà cao tầng">
-            </div>
-            <div class="project-content">
-              <h3>Toà nhà cao tầng</h3>
-            </div>
-          </a>
+        <div class="header-right">
+          <div class="header-bar header-bar-top">
+            <nav class="header-nav">
+              <a href="/" class="header-nav-link">Trang chủ</a>
+              <a href="/about.html" class="header-nav-link">Giới thiệu</a>
+              <div class="header-nav-item has-dropdown">
+                <a href="/services/" class="header-nav-link has-icon">
+                  Dịch vụ
+                  <span class="dropdown-icon"></span>
+                </a>
 
-          <!-- Project 3 -->
-          <a href="mansion.html" class="project-card">
-            <div class="project-image">
-              <img src="../assets/images/du-an-3.jpg" alt="Biệt thự sang trọng">
-            </div>
-            <div class="project-content">
-              <h3>Biệt thự sang trọng</h3>
-            </div>
-          </a>
+                <div class="dropdown-menu">
+                  <a href="/services/design.html">Tư vấn thiết kế</a>
+                  <a href="/services/construction.html">Thi công xây lắp</a>
+                  <a href="/services/design-build.html">Design & Build</a>
+                  <a href="/services/supervision.html">Tư vấn giám sát</a>
+                  <a href="/services/management.html">Quản lý dự án</a>
+                  <a href="/services/green-building.html">Công trình xanh</a>
+                </div>
+              </div>
+              <div class="header-nav-item has-dropdown">
+                <a href="/projects/" class="header-nav-link has-icon">
+                  Dự án
+                  <span class="dropdown-icon"></span>
+                </a>
 
+                <div class="dropdown-menu">
+                  <a href="/projects/civil.html">Công trình dân dụng</a>
+                  <a href="/projects/industrial.html">Công trình công nghiệp</a>
+                  <a href="/projects/public.html">Công trình công cộng</a>
+                  <a href="/projects/special.html">Công trình đặc biệt</a>
+                </div>
+              </div>
+              <div class="header-nav-item has-dropdown">
+                <a href="/knowledge/" class="header-nav-link has-icon">
+                  Kiến thức
+                  <span class="dropdown-icon"></span>
+                </a>
+
+                <div class="dropdown-menu">
+                  <a href="/knowledge/design.html">Thiết kế công trình</a>
+                  <a href="/knowledge/construction.html">Thi công xây lắp</a>
+                  <a href="/knowledge/management.html">Quản lý dự án</a>
+                  <a href="/knowledge/material-tech.html"
+                    >Vật liệu - Công nghệ</a
+                  >
+                  <a href="/knowledge/software.html">Phần mềm ứng dụng</a>
+                  <a href="/knowledge/experience.html">Trải nghiệm thực tế</a>
+                </div>
+              </div>
+              <div class="header-nav-item has-dropdown">
+                <a href="/news/" class="header-nav-link has-icon">
+                  Tin tức
+                  <span class="dropdown-icon"></span>
+                </a>
+
+                <div class="dropdown-menu">
+                  <a href="/news/internal.html">Tin tức nội bộ</a>
+                  <a href="/news/site.html">Tin tức công trường</a>
+                  <a href="/news/social.html">Tin tức xã hội</a>
+                </div>
+              </div>
+              <a href="/contact.html" class="header-nav-link">Liên hệ</a>
+              <a href="/recruitment.html" class="header-nav-link">Tuyển dụng</a>
+            </nav>
+
+            <div class="portal-btn">
+              <a href="/portal.html">Cổng nội bộ</a>
+            </div>
+          </div>
+
+          <div class="header-bar header-bar-bottom">
+            <div class="search-box">
+              <input type="text" placeholder="Tìm kiếm..." />
+
+              <button class="search-btn">
+                <svg viewBox="0 0 24 24">
+                  <path
+                    fill="currentColor"
+                    d="M10 2a8 8 0 105.293 14.293l4.707 4.707 1.414-1.414-4.707-4.707A8 8 0 0010 2zm0 2a6 6 0 110 12 6 6 0 010-12z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-    </section>
-  </main>
+    </header>
 
-  <footer>
-    <p>© 2026 Hoa Khê. All rights reserved.</p>
-  </footer>
+    <!-- ====================================
+                     MAIN 
+    ===================================== -->
+    <main></main>
 
-</body>
+    <!-- =========================
+      FOOTER
+    ========================== -->
+    <footer class="site-footer">
+      <!-- ========================= 
+      FOOTER TOP =============== -->
+      <div class="footer-top">
+        <div class="container footer-grid">
+          <!-- === Company + Contact === -->
+          <div class="footer-company">
+            <a href="/" class="footer-logo">
+              <img src="/assets/images/logo-hkc.png" alt="Hoa Khê" />
+              <span>Hoa Khê</span>
+            </a>
+
+            <div class="footer-intro">
+              <p>
+                Đơn vị uy tín trong lĩnh vực thiết kế và thi công các công trình
+                xây dựng dân dụng và công nghiệp.
+              </p>
+            </div>
+
+            <div class="footer-contact">
+              <p>
+                <strong>Địa chỉ:</strong> Số 163, phố Hoàng Ngân, phường Yên
+                Hoà, thành phố Hà Nội
+              </p>
+              <p><strong>Email:</strong> contact@hoakhe.com</p>
+              <p><strong>Điện thoại:</strong> +84 828 224 774</p>
+            </div>
+          </div>
+
+          <!-- === Map === -->
+          <div class="footer-map">
+            <a href="https://maps.google.com" target="_blank">
+              <img
+                src="/assets/images/homepage/map-placeholder.png"
+                alt="Vị trí văn phòng Hoa Khê"
+              />
+            </a>
+          </div>
+
+          <!-- === Navigation === -->
+          <nav class="footer-nav">
+            <ul>
+              <li><a href="/" class="footer-nav-link">Trang chủ</a></li>
+              <li>
+                <a href="/about.html" class="footer-nav-link">Giới thiệu</a>
+              </li>
+              <li><a href="/services/" class="footer-nav-link">Dịch vụ</a></li>
+              <li><a href="/projects/" class="footer-nav-link">Dự án</a></li>
+              <li>
+                <a href="/knowledge/" class="footer-nav-link">Kiến thức</a>
+              </li>
+              <li><a href="/news/" class="footer-nav-link">Tin tức</a></li>
+              <li>
+                <a href="/recruitment.html" class="footer-nav-link"
+                  >Tuyển dụng</a
+                >
+              </li>
+            </ul>
+
+            <div class="footer-portal">
+              <div class="portal-btn">
+                <a href="/portal.html">Cổng nội bộ</a>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+
+      <!-- ========================= 
+      FOOTER BOTTOM ============ -->
+      <div class="footer-bottom">
+        <div class="container footer-bottom-inner">
+          <p>© 2026 Hoa Khe Construction. All rights reserved.</p>
+
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook">
+              <img src="/assets/images/homepage/facebook.jpg" alt="Facebook" />
+            </a>
+
+            <a href="#" aria-label="YouTube">
+              <img src="/assets/images/homepage/youtube.jpg" alt="YouTube" />
+            </a>
+
+            <a href="#" aria-label="LinkedIn">
+              <img src="/assets/images/homepage/linkedin.jpg" alt="LinkedIn" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

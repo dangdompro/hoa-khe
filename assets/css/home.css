@@ -1,0 +1,488 @@
+/* ============================= 
+INTRO 
+============================= */
+
+/* === Section === */
+.home-intro {
+  padding: 130px 0 160px;
+  background:
+    linear-gradient(
+      to right,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.35) 15%,
+      rgba(0, 0, 0, 0.5) 25%,
+      rgba(0, 0, 0, 0.6) 40%,
+      rgba(0, 0, 0, 0.65) 50%,
+      rgba(0, 0, 0, 0.6) 60%,
+      rgba(0, 0, 0, 0.5) 75%,
+      rgba(0, 0, 0, 0.35) 85%,
+      rgba(0, 0, 0, 0) 100%
+    ),
+    url("../images/homepage/intro.jpg") center/cover no-repeat;
+}
+
+/* === Intro Container === */
+.home-intro .container {
+  text-align: center;
+}
+
+/* === Heading === */
+.home-intro h1 {
+  font-size: 78px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+.home-intro h2 {
+  font-size: 48px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 22px;
+  color: #ffffff;
+}
+
+/* === Tagline === */
+.home-intro .tagline {
+  font-weight: 600;
+  color: #eaeaea;
+  font-size: 0.95em;
+}
+
+/* === Paragraph === */
+.home-intro p {
+  max-width: 620px;
+  margin: 0 auto 30px;
+  color: #dddddd;
+  font-weight: 600;
+  line-height: 1.8;
+}
+
+/* === Buttons === */
+.home-intro-buttons {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* === Button Override === */
+.home-intro .btn-outline {
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+.home-intro .btn-outline:hover {
+  background: #ffffff;
+  color: #111;
+}
+
+/* ============================= 
+HOMEPAGE ABOUT 
+============================= */
+
+/* === Layout === */
+.home-about-grid {
+  display: grid;
+  grid-template-columns: 50% 44%;
+  gap: 40px;
+  justify-content: space-between;
+}
+
+/* === Text Block === */
+.home-about-text {
+  font-size: 16px;
+}
+
+.home-about-subtitle {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.home-about-text p {
+  margin-bottom: 26px;
+  color: var(--text-light);
+  line-height: 1.8;
+  text-align: justify;
+}
+
+.home-about-text .btn {
+  margin-top: 10px;
+}
+
+/* === Slider Container (Temp: Tạm thời để đây cho đến khi có file slider.css) === */
+.home-about-slider {
+  position: relative;
+  width: 100%;
+  border-radius: 6px;
+  overflow: hidden;
+  height: 320px;
+}
+
+/* === Image === */
+.home-about-slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* === Slide (Temp: Tạm thời để đây cho đến khi có file slider.css) === */
+.home-about-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 1.6s ease;
+}
+
+.home-about-slide.active {
+  opacity: 1;
+}
+
+/* === Overlay === */
+.home-about-slider .home-about-slide::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.85) 0%,
+    rgba(0, 0, 0, 0.55) 40%,
+    rgba(0, 0, 0, 0.25) 75%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+/* === Text === */
+.home-about-slide-text {
+  position: absolute;
+  max-width: 475px;
+  left: 28px;
+  bottom: 14px;
+  color: #fff;
+  z-index: 2;
+}
+
+.home-about-slide-text h3 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.home-about-slide-text p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #eee;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* === Link === */
+.home-about-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.home-about-link:hover {
+  opacity: 0.8;
+}
+
+/* ============================= 
+HOMEPAGE SERVICES 
+============================= */
+
+/* === GRID === */
+/* Service layout */
+.home-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* === CARD === */
+/* Service card */
+.home-service-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+/* === Images === */
+/* Full width image */
+.home-service-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Image zoom */
+.home-service-card:hover img {
+  transform: scale(1.05);
+}
+
+/* === Contents === */
+/* Text area */
+.home-service-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 12px 16px;
+}
+
+/* ============================= 
+HOME PROJECT 
+============================= */
+
+/* === PROJECT SECTION === */
+.home-projects {
+  padding: 0;
+}
+
+/* === PROJECT SLIDER === */
+.home-project-slider {
+  position: relative;
+  height: 720px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* === PROJECT SLIDE === */
+.home-project-slide {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transform: scale(1.05);
+  transition:
+    opacity 1.2s ease,
+    transform 5s ease;
+  z-index: 1;
+}
+
+/* Active */
+.home-project-slide.active {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Image */
+.home-project-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* === PROJECT HEADER === */
+.home-project-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+/* Inner layout */
+.home-project-header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 100px;
+}
+
+/* Title */
+.home-project-header .section-title {
+  margin: 0;
+}
+
+/* Button */
+.home-project-header .btn {
+  white-space: nowrap;
+}
+
+/* === PROJECT INFO LAYER === */
+.home-project-info-layer {
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+/* === PROJECT INFO ITEM === */
+.home-project-info {
+  display: none;
+  width: 420px;
+  padding: 20px;
+  color: #fff;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  backdrop-filter: blur(4px);
+
+  opacity: 0;
+  transform: translateY(10px);
+  transition: all 0.4s ease;
+}
+
+/* Active */
+.home-project-info.active {
+  display: block;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* === PROJECT DOTS === */
+.home-project-dots {
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+}
+
+/* Inner layout */
+.home-project-dots-inner {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+
+/* Dot item */
+.home-project-dot {
+  width: 20px;
+  height: 20px;
+  background-color: var(--brand-blue);
+  border-radius: 50%;
+  display: inline-block;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+/* Active */
+.home-project-dot.active {
+  background-color: red;
+  transform: scale(1.2);
+}
+
+/* ============================= 
+HOMEPAGE KNOWLEDGE 
+============================= */
+
+/* === KNOWLEDGE GRID === */
+.home-knowledge-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  align-items: start;
+}
+
+/* === Card === */
+.home-knowledge-card {
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+/* === Image === */
+.home-knowledge-card img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s ease;
+}
+
+/* === Hover image === */
+.home-knowledge-card:hover img {
+  transform: scale(1.05);
+}
+
+/* === Title === */
+.home-knowledge-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 14px 16px;
+}
+
+/* ============================= 
+HOMEPAGE NEWS 
+============================= */
+
+/* === GRID === */
+/* News layout */
+.home-news-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* === CARD === */
+/* News card */
+.home-news-card {
+  background: var(--section-gray); /* nền ghi */
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+}
+
+/* === IMAGE === */
+/* Thumbnail */
+.home-news-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Image hover zoom */
+.home-news-card:hover img {
+  transform: scale(1.05);
+}
+
+/* === CATEGORY === */
+/* News category (text, không phải label) */
+.home-news-category {
+  display: block;
+  font-size: 24px;
+  font-weight: 600;
+  color: var(--text-main);
+
+  margin: 12px 16px 8px;
+}
+
+/* === CONTENT === */
+/* Text container */
+.home-news-content {
+  padding: 16px;
+}
+
+/* === TITLE === */
+/* News title */
+.home-news-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+/* Remove link default style */
+.home-news-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* === EXCERPT === */
+/* Description */
+.home-news-excerpt {
+  font-size: 16px;
+  color: var(--text-light);
+  line-height: 1.5;
+}

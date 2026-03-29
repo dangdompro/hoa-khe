@@ -1,0 +1,104 @@
+/* ============================= 
+SERVICES BANNER 
+============================= */
+
+.services-banner {
+  position: relative;
+  min-height: 420px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+
+/* === Banner image === */
+.services-banner-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* === Banner overlay === */
+.services-banner-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0.6) 25%,
+    rgba(0, 0, 0, 0.25) 75%,
+    rgba(0, 0, 0, 0.05) 100%
+  );
+}
+
+/* === Banner text === */
+.services-banner-text {
+  position: relative;
+  max-width: var(--container-width);
+  color: #fff;
+  letter-spacing: 0.3px;
+}
+
+/* === Banner title === */
+.services-banner-text h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+/* === Banner paragraph === */
+.services-banner-text p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+/* ============================= 
+SERVICES SECTION 
+============================= */
+/* =========================
+SERVICES GRID =========== */
+
+.services-inner {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  column-gap: 90px;
+}
+
+/* đảo chiều cho section xám */
+.section-gray .services-inner {
+  grid-template-columns: 0.9fr 1.1fr;
+}
+
+/* =========================
+IMAGE =================== */
+
+.services-image {
+  width: 100%;
+  height: 360px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.services-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* =========================
+TEXT ==================== */
+
+.services-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.services-text .btn {
+  margin-top: auto;
+  align-self: flex-end;
+}

@@ -1,0 +1,184 @@
+/* ============================= 
+LAYOUT CORE 
+============================= */
+
+/* === Main === */
+/* Handle sticky footer layout */
+main {
+  flex: 1;
+}
+
+/* === Container === */
+/* Centered content wrapper */
+.container {
+  width: 90%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+/* ============================= 
+SECTION 
+============================= */
+
+/* === Base section === */
+/* Default section spacing */
+section {
+  padding: 100px 0;
+}
+
+/* === Section variants === */
+/* Background variations */
+.section-light {
+  background: var(--section-light);
+}
+
+.section-gray {
+  background: var(--section-gray);
+}
+
+/* ============================= 
+HEADER 
+============================= */
+
+/* === Header container === */
+.site-header {
+  background: #dee2e6;
+  border-bottom: 1px solid #cfd4da;
+}
+
+/* === Header layout === */
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+}
+
+/* === Logo === */
+
+.logo a {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  height: 100px;
+  width: auto;
+}
+
+/* === Header right column === */
+.header-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+}
+
+/* === Header top bar === */
+.header-bar-top {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+/* === Header bottom bar === */
+.header-bar-bottom {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* === Header navigation === */
+.header-nav {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+/* === Header contact (chỉ layout) === */
+.header-contact-btn {
+  margin-left: 24px;
+}
+
+/* ============================= 
+FOOTER 
+============================= */
+
+/* === Footer container === */
+.site-footer {
+  color: var(--text-main);
+  border-top: 3px solid var(--brand-blue);
+}
+
+/* === Footer top === */
+.footer-top {
+  padding: 45px 0;
+  background: #dee2e6;
+}
+
+/* === Footer grid === */
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.8fr 0.9fr 0.8fr;
+  gap: 40px;
+  align-items: start;
+}
+
+/* === Footer logo === */
+.footer-logo {
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer-logo img {
+  height: 60px;
+}
+
+/* === Footer map === */
+.footer-map {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 18px;
+  overflow: hidden;
+}
+
+/* === Footer navigation === */
+.footer-nav {
+  margin-left: auto;
+}
+
+.footer-nav ul {
+  list-style: none;
+  margin-bottom: 20px;
+  text-align: right;
+  padding: 0;
+}
+
+.footer-nav li {
+  margin-bottom: 8px;
+}
+
+/* === Footer portal (layout only) === */
+.footer-portal {
+  text-align: right;
+  margin-top: 12px;
+}
+
+/* === Footer bottom === */
+.footer-bottom {
+  background: #111;
+  color: #ccc;
+  padding: 24px 0;
+}
+
+.footer-bottom-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* === Footer social === */
+.footer-social {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}

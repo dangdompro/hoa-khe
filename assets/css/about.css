@@ -1,0 +1,275 @@
+/* ============================= 
+ABOUT BANNER 
+============================= */
+.about-banner {
+  position: relative;
+  min-height: 420px;
+  display: flex;
+  align-items: flex-end;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+
+/* === Banner image === */
+.about-banner-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* === Banner overlay === */
+.about-banner-overlay {
+  position: absolute;
+  inset: 0;
+
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.75) 0%,
+    rgba(0, 0, 0, 0.6) 25%,
+    rgba(0, 0, 0, 0.25) 75%,
+    rgba(0, 0, 0, 0.05) 100%
+  );
+}
+
+/* === Banner text === */
+.about-banner-text {
+  position: relative;
+  max-width: var(--container-width);
+  color: #fff;
+  letter-spacing: 0.3px; /* thêm dòng này */
+}
+
+/* === Banner title === */
+.about-banner-text h1 {
+  font-size: 48px;
+  margin-bottom: 16px;
+}
+
+/* === Banner paragraph === */
+.about-banner-text p {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.7;
+  text-align: justify;
+}
+
+/* ============================= 
+ABOUT LETTER 
+============================= */
+
+/* === Letter section === */
+.about-letter {
+  padding: 80px 0;
+}
+
+/* === Letter layout === */
+.about-letter-inner {
+  display: grid;
+  grid-template-columns: 1.6fr 0.8fr;
+  gap: 90px;
+  align-items: start;
+}
+
+/* === Letter text === */
+.about-letter-text p {
+  line-height: 1.8;
+  margin-bottom: 14px;
+  text-align: justify;
+}
+
+/* === Signature box === */
+.signature-box {
+  width: 220px;
+  margin-top: -20px;
+  margin-left: auto;
+  margin-right: 20px;
+  position: relative;
+  text-align: center;
+}
+
+/* === Signature image === */
+.signature-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* === Title inside image === */
+.signature-title {
+  position: absolute;
+  top: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-weight: 600;
+}
+
+/* === Name inside image === */
+.signature-name {
+  position: absolute;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  font-weight: 600;
+}
+
+/* === Letter image === */
+.about-letter-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* =========================
+   COMPANY VALUES
+========================= */
+
+.company-values-inner {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  column-gap: 90px;
+}
+
+/* đảo layout */
+.section-gray .company-values-inner {
+  grid-template-columns: 1.1fr 0.9fr;
+}
+
+/* === TEXT === */
+.company-values-text h3 {
+  font-size: 20px;
+  font-weight: 600;
+
+  text-align: justify;
+}
+
+.company-values-text p {
+  line-height: 1.8;
+  margin-top: 14px;
+  color: #555;
+  text-align: justify;
+}
+
+/* === IMAGE === */
+.company-values-image {
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.company-values-image img {
+  width: 100%;
+  height: 480px;
+  object-fit: cover;
+}
+
+/* ============================= 
+KEY PERSONNEL 
+============================= */
+.about-team-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* === Card === */
+.about-team-card {
+  background: var(--section-gray);
+  border: none; /* bỏ viền */
+  border-radius: 6px;
+  padding: 18px;
+}
+
+.about-team-card strong {
+  font-weight: 700;
+}
+
+/* === Photo === */
+.team-photo {
+  float: left;
+  width: 130px; /* giảm từ 150 */
+  height: 170px; /* giảm theo */
+  object-fit: cover;
+  margin-right: 20px;
+  margin-bottom: 8px;
+}
+
+/* === Typography === */
+.about-team-card h3 {
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  line-height: 1.2;
+  word-break: keep-all;
+  white-space: nowrap; /* tránh xuống dòng */
+}
+
+.team-role {
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.about-team-card p {
+  line-height: 1.7;
+  margin-bottom: 10px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* ============================= 
+ABOUT PARTNERS 
+============================= */
+
+/* === Section spacing === */
+.about-partner .section-title {
+  margin-bottom: 60px;
+}
+
+/* === Wrapper === */
+.partners-wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+/* === Track === */
+.partners-track {
+  display: flex;
+  gap: 40px;
+  width: max-content;
+
+  animation: partner-scroll 30s linear infinite;
+  will-change: transform;
+}
+
+/* === Item === */
+.partner-item {
+  flex: 0 0 auto;
+  width: 180px;
+}
+
+/* === Logo === */
+.partner-item img {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+.partner-item img:hover {
+  opacity: 1;
+}
+
+/* === Animation === */
+@keyframes partner-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
